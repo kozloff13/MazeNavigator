@@ -4,7 +4,9 @@ public class Main{
 
         City city = new City(10,10);
         city.printCity();
-        city.path();
+
+        Navigator navi = new Solver();
+        navi.printPath();
 
     }
 

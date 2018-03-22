@@ -80,39 +80,6 @@ public class City {
         }
     }
 
-    public void path(City city){
-        char[][] searchRoute;
-        searchRoute = new char[map.length][map[1].length];
-
-        rows = map.length;
-        cols = map[0].length;
-
-        while (map[rows][cols] > 1){
-            System.out.println(rows + " " + cols);
-            if (rows < rows - 1 && map[rows + 1][cols] == map[rows][cols] - 1) {
-                rows++;
-                continue;
-            }
-            if (rows > 0 && map[rows - 1][cols] == map[rows][cols] - 1) {
-                rows--;
-                continue;
-            }
-            if (cols < cols - 1 && map[rows][cols+1] == map[rows][cols] - 1) {
-                cols++;
-                continue;
-            }
-            if (cols > 0 && map[rows][cols-1] == map[rows][cols] - 1) {
-                cols--;
-                continue;
-            }
-        }
-        System.out.println(rows + " " + cols);
-    }
-
-    public void printPath() {
-        return path();
-    }
-
     public void printCity() {
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
