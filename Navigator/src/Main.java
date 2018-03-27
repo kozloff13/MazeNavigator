@@ -5,8 +5,12 @@ public class Main{
         City city = new City(10,10);
         city.printCity();
 
-        Navigator navi = new Solver();
-        navi.printPath();
+        System.out.println();
+
+        Solver sol = new Solver(city.map);
+        sol.solveMap();
+        sol.printRoute();
+
 
     }
 

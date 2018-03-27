@@ -5,6 +5,6 @@ public interface Navigator {
      * @return карта города с построенным маршрутом
      */
     void searchRoute(char[][] map);
-    void printPath();
+    //void printPath();
 
 }
