@@ -73,8 +73,8 @@ public class City {
                         }
                     }
                     map[i][j] = ch;
-                    map[0][0] = '@'; //задаем стартовую позицию
-                    map[9][9] = 'X'; //задаем финиш
+                    map[1][1] = '@'; //задаем стартовую позицию
+                    map[8][8] = 'X'; //задаем финиш
                 }
             }
         }
@@ -87,5 +87,9 @@ public class City {
             }
             System.out.println();
         }
+    }
+
+    public char[][] getMap() {
+        return map;
     }
 }
